@@ -1,4 +1,14 @@
 package main
 
+import (
+	"fmt"
+
+	"github.com/NRZero1/Alterra_ICP_Practices/Cylinder"
+)
+
 func main() {
+	fmt.Println("Challenge 1: Cylinder Surface Area")
+	fmt.Println(Cylinder.SurfaceArea())
+	fmt.Print("\n")
+	fmt.Println("Challenge 2: Checking Grade")
 }
