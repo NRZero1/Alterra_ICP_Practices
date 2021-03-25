@@ -2,12 +2,12 @@ package Grade
 
 import "fmt"
 
-func checkGrade() string {
+func CheckGrade() string {
 	var nilai int
 	var finalGrade string
 
 	fmt.Print("Cek nilai yang akan diinput: ")
-	fmt.Scanln(nilai)
+	fmt.Scanln(&nilai)
 
 	if nilai > 85 {
 		finalGrade = "Grade A"
