@@ -1,16 +1,18 @@
-package main
+package Cylinder
 
 import (
+	"fmt"
 	"math"
 )
 
-type CylinderAtt struct {
-	rad    float64
-	height float64
-}
-
 func SurfaceArea() float64 {
-	var cylinder CylinderAtt
+	var rad float64
+	var height float64
 
-	return 2.0 * math.Pi * cylinder.rad * (cylinder.rad + cylinder.height)
+	fmt.Print("Input radius: ")
+	fmt.Scanln(rad)
+	fmt.Print("Input height: ")
+	fmt.Scanln(height)
+
+	return 2.0 * math.Pi * rad * (rad + height)
 }
